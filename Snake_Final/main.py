@@ -16,7 +16,7 @@ class App(tk.Tk):
         self.cell_height = 25
         self.rect = {}
         self.oval = {}
-        self.dead = 0
+        self.dead = -1
         for column in range(20):
             for row in range(20):
                 x1 = column * self.cell_width
@@ -39,12 +39,17 @@ class App(tk.Tk):
         self.game_play()
         self.canvas.itemconfig(self.oval[a.y, a.x], state="normal", fill="green")
         to_draw = []
+        x = 0
         for i in s.snake_parts_list:
-            to_draw.append((self.rect[i.get_y(), i.get_x()], i.is_head()))
+            to_draw.append((self.rect[i.get_y(), i.get_x()], i.is_head(), x))
+            x += 1
         for i in to_draw:
             if i[1]:
                 self.canvas.itemconfig(i[0], fill="orange")
             else:
+                # if i[2] % 2 != 0:
+                # self.canvas.itemconfig(i[0], fill="blue")
+                # else:
                 self.canvas.itemconfig(i[0], fill="red")
         self.after(delay, lambda: self.re_draw(delay))
 
@@ -52,19 +57,29 @@ class App(tk.Tk):
         head_x = s.snake_parts_list[0].get_x()
         head_y = s.snake_parts_list[0].get_y()
         if (head_x, head_y) == (a.x, a.y):
-            s.grow()
             self.canvas.itemconfig(self.oval[a.y, a.x], state="hidden", fill="black")
             a.new_pos(s.snake_parts_list)
-        for i in range(1, len(s.snake_parts_list) - 1):
+            s.grow()
+        for i in range(1, len(s.snake_parts_list)):
+            # print(str(i))
             if (s.snake_parts_list[i].get_x(), s.snake_parts_list[i].get_y()) == (head_x, head_y):
                 self.dead += 1
-                if self.dead > 1:
-                    self.withdraw()
-                    self.exit_application()
+                if self.dead == 2:
+                    print("ATE: " + (str(i)))
+                    self.dead = 0
+                    s.snake_parts_list = []
+                    s.direction = "n"
+                    s.snake_parts_list.append(log.snake_parts(True, 9, 9))
+                    s.grow()
+                    s.grow()
+                    a.new_pos(s.snake_parts_list)
+                    break
+            else:
+                pass
         s.direction = s.control(s.direction)
         s.movement()
 
-    def exit_application(self):
+    """def exit_application(self):
         MsgBox = messagebox.askquestion("Game Over",
                                         'Do you want to play again?' + '\n' + (
                                                     "You Scored: " + str(len(s.snake_parts_list) - 1)),
@@ -78,9 +93,9 @@ class App(tk.Tk):
             a.new_pos(s.snake_parts_list)
             s.grow()
             s.grow()
-            self.re_draw(100)
+
         else:
-            sys.exit()
+            sys.exit()"""
 
 
 if __name__ == "__main__":
