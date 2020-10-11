@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a335f884-bbda-4100-83fc-2303bf6af14f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Uq6miEFmSZp8Om9V8WR5ICQ2k3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RunManager" selected="Python.gui">
+    <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Snake_Final" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\dell\AppData\Local\Programs\Python\Python37-32\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="gui" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Snake_Final" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="logic" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Snake_Final" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/logic.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.Unnamed" />
+      <item itemvalue="Python.logic" />
+      <item itemvalue="Python.gui" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.gui" />
+        <item itemvalue="Python.logic" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a335f884-bbda-4100-83fc-2303bf6af14f" name="Default Changelist" comment="" />
+      <created>1576071938365</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576071938365</updated>
+      <workItem from="1576071945742" duration="97000" />
+      <workItem from="1576104689262" duration="2328000" />
+      <workItem from="1576145661094" duration="5564000" />
+      <workItem from="1576256641269" duration="6562000" />
+      <workItem from="1576268071365" duration="182000" />
+      <workItem from="1576268382897" duration="1502000" />
+      <workItem from="1576273124243" duration="755000" />
+      <workItem from="1576609799993" duration="2967000" />
+      <workItem from="1576619655232" duration="1707000" />
+      <workItem from="1576783885163" duration="357000" />
+      <workItem from="1576878129505" duration="20000" />
+      <workItem from="1576878191681" duration="826000" />
+      <workItem from="1577730830564" duration="125000" />
+      <workItem from="1580139948286" duration="139000" />
+      <workItem from="1580382606147" duration="20000" />
+      <workItem from="1580745720939" duration="38000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="252" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576105444195">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state x="552" y="252" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2194.1194@0.0.2194.1194" timestamp="1576105444195" />
+    <state width="2151" height="333" key="GridCell.Tab.0.bottom" timestamp="1580140065792">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state width="2151" height="333" key="GridCell.Tab.0.bottom/0.0.2194.1194@0.0.2194.1194" timestamp="1580140065792" />
+    <state width="2151" height="333" key="GridCell.Tab.0.center" timestamp="1580140065792">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state width="2151" height="333" key="GridCell.Tab.0.center/0.0.2194.1194@0.0.2194.1194" timestamp="1580140065792" />
+    <state width="2151" height="333" key="GridCell.Tab.0.left" timestamp="1580140065792">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state width="2151" height="333" key="GridCell.Tab.0.left/0.0.2194.1194@0.0.2194.1194" timestamp="1580140065792" />
+    <state width="2151" height="333" key="GridCell.Tab.0.right" timestamp="1580140065792">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state width="2151" height="333" key="GridCell.Tab.0.right/0.0.2194.1194@0.0.2194.1194" timestamp="1580140065792" />
+    <state width="2151" height="409" key="GridCell.Tab.1.bottom" timestamp="1576621518934">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state width="2151" height="409" key="GridCell.Tab.1.bottom/0.0.2194.1194@0.0.2194.1194" timestamp="1576621518934" />
+    <state width="2151" height="409" key="GridCell.Tab.1.center" timestamp="1576621518933">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state width="2151" height="409" key="GridCell.Tab.1.center/0.0.2194.1194@0.0.2194.1194" timestamp="1576621518933" />
+    <state width="2151" height="409" key="GridCell.Tab.1.left" timestamp="1576621518933">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state width="2151" height="409" key="GridCell.Tab.1.left/0.0.2194.1194@0.0.2194.1194" timestamp="1576621518933" />
+    <state width="2151" height="409" key="GridCell.Tab.1.right" timestamp="1576621518933">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state width="2151" height="409" key="GridCell.Tab.1.right/0.0.2194.1194@0.0.2194.1194" timestamp="1576621518933" />
+    <state x="793" y="421" key="com.intellij.ide.util.TipDialog" timestamp="1576609803351">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state x="793" y="421" key="com.intellij.ide.util.TipDialog/0.0.2194.1194@0.0.2194.1194" timestamp="1576609803351" />
+    <state x="839" y="240" key="refactoring.ChangeSignatureDialog" timestamp="1576610838268">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state x="839" y="240" key="refactoring.ChangeSignatureDialog/0.0.2194.1194@0.0.2194.1194" timestamp="1576610838268" />
+    <state x="760" y="264" width="672" height="678" key="search.everywhere.popup" timestamp="1576151818672">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state x="760" y="264" width="672" height="678" key="search.everywhere.popup/0.0.2194.1194@0.0.2194.1194" timestamp="1576151818672" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Snake_Final$gui.coverage" NAME="gui Coverage Results" MODIFIED="1580140028313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Snake_Final$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1576105447555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Snake_Final$logic.coverage" NAME="logic Coverage Results" MODIFIED="1576621373995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
