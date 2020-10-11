@@ -30,7 +30,7 @@ class App(tk.Tk):
         a.new_pos(s.snake_parts_list)
         s.grow()
         s.grow()
-        self.re_draw(100)
+        self.re_draw(150)
 
     def re_draw(self, delay):
         for y in range(0, 20):
@@ -60,22 +60,26 @@ class App(tk.Tk):
             self.canvas.itemconfig(self.oval[a.y, a.x], state="hidden", fill="black")
             a.new_pos(s.snake_parts_list)
             s.grow()
+        print("---------")
         for i in range(1, len(s.snake_parts_list)):
-            # print(str(i))
+            print(str(i))
+            print(str(s.snake_parts_list[i].get_x()) +" "+ str(s.snake_parts_list[i].get_y()) + "==" , (head_x, head_y))
             if (s.snake_parts_list[i].get_x(), s.snake_parts_list[i].get_y()) == (head_x, head_y):
-                self.dead += 1
-                if self.dead == 2:
-                    print("ATE: " + (str(i)))
-                    self.dead = 0
-                    s.snake_parts_list = []
-                    s.direction = "n"
-                    s.snake_parts_list.append(log.snake_parts(True, 9, 9))
-                    s.grow()
-                    s.grow()
-                    a.new_pos(s.snake_parts_list)
-                    break
+                if i %2 != 0:
+                    self.dead += 1
+                    if self.dead == 2:
+                        print("ATE: " + (str(i)))
+                        self.dead = 0
+                        s.snake_parts_list = []
+                        s.direction = "n"
+                        s.snake_parts_list.append(log.snake_parts(True, 9, 9))
+                        s.grow()
+                        s.grow()
+                        a.new_pos(s.snake_parts_list)
+                        break
             else:
                 pass
+        print("---------")
         s.direction = s.control(s.direction)
         s.movement()
 
@@ -101,3 +105,4 @@ class App(tk.Tk):
 if __name__ == "__main__":
     app = App()
     app.mainloop()
+#cant die on odd part

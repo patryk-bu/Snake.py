@@ -108,4 +108,3 @@ class apple:
                 self.new_pos(snakes)
 
 
-
