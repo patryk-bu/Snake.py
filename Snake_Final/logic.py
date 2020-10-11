@@ -1,7 +1,7 @@
 import random
 import keyboard
 
-
+#snake parts
 class snake_parts:
     def __init__(self, head, x, y):
         if head:
