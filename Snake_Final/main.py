@@ -47,10 +47,10 @@ class App(tk.Tk):
             if i[1]:
                 self.canvas.itemconfig(i[0], fill="orange")
             else:
-                # if i[2] % 2 != 0:
-                # self.canvas.itemconfig(i[0], fill="blue")
-                # else:
-                self.canvas.itemconfig(i[0], fill="red")
+                if i[2] % 2 != 0:
+                    self.canvas.itemconfig(i[0], fill="blue")
+                else:
+                    self.canvas.itemconfig(i[0], fill="red")
         self.after(delay, lambda: self.re_draw(delay))
 
     def game_play(self):
