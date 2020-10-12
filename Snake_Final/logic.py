@@ -33,6 +33,7 @@ class snake:
         self.direction = "n"
         self.snake_parts_list.append(snake_parts(True, 9, 9))
 
+
     def movement(self):
         temp = self.snake_parts_list
         tempx = []

@@ -16,7 +16,7 @@ class App(tk.Tk):
         self.cell_height = 25
         self.rect = {}
         self.oval = {}
-        self.dead = -1
+        self.turns = 0
         for column in range(20):
             for row in range(20):
                 x1 = column * self.cell_width
@@ -47,49 +47,32 @@ class App(tk.Tk):
             if i[1]:
                 self.canvas.itemconfig(i[0], fill="orange")
             else:
-                if i[2] % 2 != 0:
-                    self.canvas.itemconfig(i[0], fill="blue")
-                else:
-                    self.canvas.itemconfig(i[0], fill="red")
+                self.canvas.itemconfig(i[0], fill="red")
         self.after(delay, lambda: self.re_draw(delay))
 
     def game_play(self):
+        self.turns += 1
         head_x = s.snake_parts_list[0].get_x()
         head_y = s.snake_parts_list[0].get_y()
         if (head_x, head_y) == (a.x, a.y):
             self.canvas.itemconfig(self.oval[a.y, a.x], state="hidden", fill="black")
             a.new_pos(s.snake_parts_list)
             s.grow()
-        print("---------")
         for i in range(1, len(s.snake_parts_list)):
-            print(str(i))
-            print(str(s.snake_parts_list[i].get_x()) +" "+ str(s.snake_parts_list[i].get_y()) + "==" , (head_x, head_y))
-            if (s.snake_parts_list[i].get_x(), s.snake_parts_list[i].get_y()) == (head_x, head_y):
-                if i %2 != 0:
-                    self.dead += 1
-                    if self.dead == 2:
-                        print("ATE: " + (str(i)))
-                        self.dead = 0
-                        s.snake_parts_list = []
-                        s.direction = "n"
-                        s.snake_parts_list.append(log.snake_parts(True, 9, 9))
-                        s.grow()
-                        s.grow()
-                        a.new_pos(s.snake_parts_list)
-                        break
-            else:
-                pass
-        print("---------")
+            if self.turns > 1:
+                if (s.snake_parts_list[i].get_x(), s.snake_parts_list[i].get_y()) == (head_x, head_y):
+                    self.exit_application()
+                    break
         s.direction = s.control(s.direction)
         s.movement()
 
-    """def exit_application(self):
-        MsgBox = messagebox.askquestion("Game Over",
-                                        'Do you want to play again?' + '\n' + (
-                                                    "You Scored: " + str(len(s.snake_parts_list) - 1)),
-                                        icon='warning')
-        if MsgBox == 'yes':
-            self.dead = 0
+    def exit_application(self):
+        msg_box = messagebox.askquestion("Game Over",
+                                         'Do you want to play again?' + '\n' + (
+                                                 "You Scored: " + str(len(s.snake_parts_list) - 1)),
+                                         icon='warning')
+        if msg_box == 'yes':
+            self.turns = 0
             self.deiconify()
             s.snake_parts_list = []
             s.direction = "n"
@@ -97,12 +80,12 @@ class App(tk.Tk):
             a.new_pos(s.snake_parts_list)
             s.grow()
             s.grow()
+            a.new_pos(s.snake_parts_list)
 
         else:
-            sys.exit()"""
+            sys.exit()
 
 
 if __name__ == "__main__":
     app = App()
     app.mainloop()
-#cant die on odd part
