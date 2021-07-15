@@ -2,7 +2,7 @@ import random
 import keyboard
 
 
-# class for each individual snake body part
+# class for each individual snake body parts
 class snake_parts:
     # constructor and attributes
     def __init__(self, head, x, y):
